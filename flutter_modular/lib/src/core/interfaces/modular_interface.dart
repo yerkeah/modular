@@ -21,6 +21,7 @@ abstract class ModularInterface {
   void init(Module module);
   void bindModule(Module module, {String path, bool rebindDuplicates});
   void debugPrintModular(String text);
+  void removeAllModules();
   T bind<T extends Object>(Bind<T> bind);
   Future<void> isModuleReady<M>();
   Future<B> getAsync<B extends Object>({List<Type>? typesInRequestList});

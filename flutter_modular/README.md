@@ -639,6 +639,14 @@ class HomeGuard extends RouteGuard {
 }
 ```
 
+## `Remove All Modules`
+
+If you use flutter_modular in your existing project only for some part of the screens, you can use this function to delete all modules that are in memory. 
+
+```dart
+Modular.removeAllModules();
+```
+
 ## Retrieving your injected dependencies in the view
 
 Let's assume the following BLoC has been defined and injected into our module (as in the previous example):
